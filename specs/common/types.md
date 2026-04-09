@@ -19,6 +19,21 @@ These types should be defined in a `common` crate and shared across all microser
 - Use `chrono::DateTime<Utc>` for all timestamps.
 - Use `chrono::NaiveDate` for business dates (e.g., Invoice Date).
 
+### Quantity
+
+- **Representation:** `struct Quantity { value: f64, unit_of_measure: String }`
+- **UOM Example:** 'EA' (Each), 'KG', 'LITRE', 'HOUR'.
+
+### Weight
+
+- **Representation:** `struct Weight { value: f64, unit: String }`
+- **Unit Example:** 'KG', 'LB'.
+
+### Volume
+
+- **Representation:** `struct Volume { value: f64, unit: String }`
+- **Unit Example:** 'M3' (Cubic Meter), 'LITRE'.
+
 ### Common Error Codes
 
 - `UNAUTHORIZED`: 401
